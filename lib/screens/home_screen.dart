@@ -13,7 +13,9 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("New"),
+        actions: const <Widget>[
+          
+        ], 
       ),
     );
   }
