@@ -1,7 +1,10 @@
 import 'package:brickscontribution/components/appbar_block1.dart';
 import 'package:brickscontribution/components/appbar_block2.dart';
+import 'package:brickscontribution/components/carousel.dart';
+import 'package:brickscontribution/components/details_block.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
+import '../components/bottom_navigation.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -11,18 +14,23 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  
+
   @override
   Widget build(BuildContext context) {
     return Container(
       decoration: const BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [Color(0xff474a5a), Color(0xff363946)]),
+        gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [
+            Color(0xff474a5a),
+            Color(0xff1C1E25),
+          ],
         ),
+      ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        extendBodyBehindAppBar: true,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           automaticallyImplyLeading: false,
@@ -50,6 +58,32 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
         ),
+        body: Column(
+          children: const [
+             Padding(
+              padding: EdgeInsets.only(
+                top: 40.0,
+                right: 120.0,
+              ),
+              child: Text(
+                "Your Collectives",
+                style: kHeading1,
+              ),
+            ),
+             Padding(
+              padding: EdgeInsets.only(right: 172.0),
+              child: Text(
+                "Represent and Earn",
+                style: kHeading2,
+              ),
+            ),
+           Padding(
+             padding: EdgeInsets.only(top: 20.0),
+             child: Carousel()),
+          ],
+        ),
+        extendBody: true,
+        bottomNavigationBar: const BottomNavBarCurvedFb1(),
       ),
     );
   }
