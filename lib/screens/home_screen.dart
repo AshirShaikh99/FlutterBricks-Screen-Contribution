@@ -14,8 +14,6 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  
-
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -60,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: Column(
           children: const [
-             Padding(
+            Padding(
               padding: EdgeInsets.only(
                 top: 40.0,
                 right: 120.0,
@@ -70,16 +68,14 @@ class _HomeScreenState extends State<HomeScreen> {
                 style: kHeading1,
               ),
             ),
-             Padding(
+            Padding(
               padding: EdgeInsets.only(right: 172.0),
               child: Text(
                 "Represent and Earn",
                 style: kHeading2,
               ),
             ),
-           Padding(
-             padding: EdgeInsets.only(top: 20.0),
-             child: Carousel()),
+            Expanded(child: Carousel()),
           ],
         ),
         extendBody: true,
