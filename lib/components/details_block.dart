@@ -44,7 +44,7 @@ class _DetailsBlockState extends State<DetailsBlock>
           children: const [
             Positioned(
               top: 20.0,
-              left: 24.0,
+              left: 28.0,
               child: Image(
                 width: 220.0,
                 image: AssetImage("assets/images/slide_img.png"),

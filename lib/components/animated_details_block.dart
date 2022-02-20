@@ -3,8 +3,8 @@ import 'details_block.dart';
 
 List<Widget> children = const [
     DetailsBlock(),
-    // DetailsBlock(),
-    // DetailsBlock(),
+    DetailsBlock(),
+    DetailsBlock(),
   ];
 
   Widget animatedCarousel(int index, PageController pageController) {
@@ -23,4 +23,4 @@ List<Widget> children = const [
         );
       },
     );
-  }
+  } // Animated carousel implemented and you use it in your apps enjoy! 
