@@ -23,4 +23,4 @@ List<Widget> children = const [
         );
       },
     );
-  } // Animated carousel implemented and you use it in your apps enjoy! 
+  } // Animated carousel implemented and you use it in your apps
