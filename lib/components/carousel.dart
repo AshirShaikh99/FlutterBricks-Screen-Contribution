@@ -15,7 +15,6 @@ class _CarouselState extends State<Carousel> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _pageController = PageController(
         initialPage: _currentPage, viewportFraction: 0.8, keepPage: false);
