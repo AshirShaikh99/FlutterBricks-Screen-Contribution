@@ -84,8 +84,21 @@ class _DetailsBlockState extends State<DetailsBlock>
               ),
               Positioned(
                 top: 390.0,
-                left: 45.0,
+                left: 46.0,
                 child: GradientText(null, ".7 Sol", 20.0),
+              ),
+              Positioned(
+                top: 350.0,
+                left: 170.0,
+                child: Text(
+                  "Members",
+                  style: kHeading5,
+                ),
+              ),
+              Positioned(
+                top: 390.0,
+                left: 182.0,
+                child: GradientText(null, "600", 20.0),
               ),
             ],
           ),
