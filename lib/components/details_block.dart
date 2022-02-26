@@ -65,6 +65,14 @@ class _DetailsBlockState extends State<DetailsBlock>
                   style: kHeading3,
                 ),
               ),
+              Positioned(
+                top: 280.0,
+                left: 98.0,
+                child: Text(
+                  "Founder: 7KZAZ",
+                  style: kHeading4,
+                ),
+              ),
             ],
           ),
         ),
