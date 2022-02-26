@@ -1,3 +1,4 @@
+import 'package:brickscontribution/constants.dart';
 import 'package:flutter/material.dart';
 
 class DetailsBlock extends StatefulWidget {
@@ -18,6 +19,12 @@ class _DetailsBlockState extends State<DetailsBlock>
       vsync: this,
       duration: const Duration(milliseconds: 400),
     )..repeat(reverse: true); // automatically animation will be started
+  }
+
+  @override
+  void dispose() {
+    controller.dispose();
+    super.dispose();
   }
 
   @override
@@ -48,6 +55,14 @@ class _DetailsBlockState extends State<DetailsBlock>
                   width: 220.0,
                   image: AssetImage("assets/images/slide_img.png"),
                   fit: BoxFit.cover,
+                ),
+              ),
+              Positioned(
+                top: 220.0,
+                left: 60.0,
+                child: Text(
+                  "GLDN DRGN",
+                  style: kHeading1,
                 ),
               ),
             ],

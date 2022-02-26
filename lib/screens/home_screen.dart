@@ -29,10 +29,11 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
+        extendBodyBehindAppBar: true,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
-          automaticallyImplyLeading: false,
-          elevation: 4.0,
+          //automaticallyImplyLeading: false,
+          elevation: 0,
           actions: <Widget>[
             Row(
               children: const [

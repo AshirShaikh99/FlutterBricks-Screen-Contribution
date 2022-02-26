@@ -22,13 +22,6 @@ class _CarouselState extends State<Carousel> {
   }
 
   @override
-  void dispose() {
-    // TODO: implement dispose
-    super.dispose();
-    _pageController.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Stack(
       children: [
@@ -38,7 +31,7 @@ class _CarouselState extends State<Carousel> {
             itemCount: 3,
             controller: _pageController,
             itemBuilder: (context, index) {
-              return animatedCarousel(index,_pageController);
+              return animatedCarousel(index, _pageController);
             },
           ),
         ),
