@@ -3,7 +3,17 @@ import 'package:brickscontribution/utils/gradient_text.dart';
 import 'package:flutter/material.dart';
 
 class DetailsBlock extends StatefulWidget {
-  const DetailsBlock({Key? key}) : super(key: key);
+  const DetailsBlock(
+    Key? key,
+    this.imgUrl,
+    this.txt1,
+    this.txt2,
+    this.txt3,
+    this.txt4,
+    this.txt5,
+    this.txt6,
+  ) : super(key: key);
+  final String imgUrl, txt1, txt2, txt3, txt4, txt5, txt6;
 
   @override
   _DetailsBlockState createState() => _DetailsBlockState();
@@ -12,7 +22,6 @@ class DetailsBlock extends StatefulWidget {
 class _DetailsBlockState extends State<DetailsBlock>
     with SingleTickerProviderStateMixin {
   late AnimationController controller;
-
   @override
   void initState() {
     super.initState();
@@ -48,13 +57,13 @@ class _DetailsBlockState extends State<DetailsBlock>
             ],
           ),
           child: Stack(
-            children: const [
+            children: [
               Positioned(
                 top: 20.0,
                 left: 28.0,
                 child: Image(
                   width: 220.0,
-                  image: AssetImage("assets/images/slide_img.png"),
+                  image: AssetImage(widget.imgUrl),
                   fit: BoxFit.cover,
                 ),
               ),
@@ -62,7 +71,7 @@ class _DetailsBlockState extends State<DetailsBlock>
                 top: 250.0,
                 left: 80.0,
                 child: Text(
-                  "GLDN DRGN",
+                  widget.txt1,
                   style: kHeading3,
                 ),
               ),
@@ -70,7 +79,7 @@ class _DetailsBlockState extends State<DetailsBlock>
                 top: 280.0,
                 left: 98.0,
                 child: Text(
-                  "Founder: 7KZAZ",
+                  widget.txt2,
                   style: kHeading4,
                 ),
               ),
@@ -78,27 +87,27 @@ class _DetailsBlockState extends State<DetailsBlock>
                 top: 350.0,
                 left: 44.0,
                 child: Text(
-                  "Earnings",
+                  widget.txt3,
                   style: kHeading5,
                 ),
               ),
               Positioned(
                 top: 390.0,
                 left: 46.0,
-                child: GradientText(null, ".7 Sol", 20.0),
+                child: GradientText(null, widget.txt4, 20.0),
               ),
               Positioned(
                 top: 350.0,
                 left: 170.0,
                 child: Text(
-                  "Members",
+                  widget.txt5,
                   style: kHeading5,
                 ),
               ),
               Positioned(
                 top: 390.0,
                 left: 182.0,
-                child: GradientText(null, "600", 20.0),
+                child: GradientText(null, widget.txt6, 20.0),
               ),
             ],
           ),

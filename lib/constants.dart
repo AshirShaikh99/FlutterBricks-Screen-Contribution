@@ -29,3 +29,5 @@ const kHeading5 = TextStyle(
   fontWeight: FontWeight.w400,
   color: Colors.white,
 );
+
+const kImgUrl = "assets/images/slide_img.png";
