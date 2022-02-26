@@ -2,6 +2,7 @@ import 'package:brickscontribution/components/appbar_block1.dart';
 import 'package:brickscontribution/components/appbar_block2.dart';
 import 'package:brickscontribution/components/carousel.dart';
 import 'package:brickscontribution/components/details_block.dart';
+import 'package:brickscontribution/components/transparent_topbar.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../components/bottom_navigation.dart';
@@ -30,35 +31,36 @@ class _HomeScreenState extends State<HomeScreen> {
       child: Scaffold(
         backgroundColor: Colors.transparent,
         // extendBodyBehindAppBar: true,
-        appBar: AppBar(
-          // backgroundColor: Colors.transparent,
-          automaticallyImplyLeading: true,
-          elevation: 0,
-          actions: <Widget>[
-            Row(
-              children: const [
-                Padding(
-                  padding: EdgeInsets.only(right: 10.0),
-                  child: AppBarBlock1(),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(right: 6.0),
-                  child: AppBarBlock2(),
-                ),
-              ],
-            ),
-          ],
-          flexibleSpace: Container(
-            decoration: const BoxDecoration(
-              gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: <Color>[Color(0xff474a5a), Color(0xff363946)]),
-            ),
-          ),
-        ),
+        // appBar: AppBar(
+        //   // backgroundColor: Colors.transparent,
+        //   automaticallyImplyLeading: true,
+        //   elevation: 0,
+        //   actions: <Widget>[
+        //     Row(
+        //       children: const [
+        //         Padding(
+        //           padding: EdgeInsets.only(right: 10.0),
+        //           child: AppBarBlock1(),
+        //         ),
+        //         Padding(
+        //           padding: EdgeInsets.only(right: 6.0),
+        //           child: AppBarBlock2(),
+        //         ),
+        //       ],
+        //     ),
+        //   ],
+        //   flexibleSpace: Container(
+        //     decoration: const BoxDecoration(
+        //       gradient: LinearGradient(
+        //           begin: Alignment.topCenter,
+        //           end: Alignment.bottomCenter,
+        //           colors: <Color>[Color(0xff474a5a), Color(0xff363946)]),
+        //     ),
+        //   ),
+        // ),
         body: Column(
           children: const [
+            TopBar(),
             Padding(
               padding: EdgeInsets.only(
                 top: 40.0,
