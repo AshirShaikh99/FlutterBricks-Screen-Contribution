@@ -23,3 +23,9 @@ const kHeading4 = TextStyle(
   fontWeight: FontWeight.w400,
   color: Color(0xff898B98),
 );
+
+const kHeading5 = TextStyle(
+  fontSize: 14.0,
+  fontWeight: FontWeight.w400,
+  color: Colors.white,
+);

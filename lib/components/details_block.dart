@@ -1,4 +1,5 @@
 import 'package:brickscontribution/constants.dart';
+import 'package:brickscontribution/utils/gradient_text.dart';
 import 'package:flutter/material.dart';
 
 class DetailsBlock extends StatefulWidget {
@@ -72,6 +73,19 @@ class _DetailsBlockState extends State<DetailsBlock>
                   "Founder: 7KZAZ",
                   style: kHeading4,
                 ),
+              ),
+              Positioned(
+                top: 350.0,
+                left: 44.0,
+                child: Text(
+                  "Earnings",
+                  style: kHeading5,
+                ),
+              ),
+              Positioned(
+                top: 390.0,
+                left: 45.0,
+                child: GradientText(null, ".7 Sol", 20.0),
               ),
             ],
           ),
