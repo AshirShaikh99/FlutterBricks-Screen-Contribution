@@ -29,7 +29,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
-        extendBodyBehindAppBar: true,
+        // extendBodyBehindAppBar: true,
         appBar: AppBar(
           backgroundColor: Colors.transparent,
           //automaticallyImplyLeading: false,

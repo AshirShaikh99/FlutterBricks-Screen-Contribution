@@ -58,11 +58,11 @@ class _DetailsBlockState extends State<DetailsBlock>
                 ),
               ),
               Positioned(
-                top: 220.0,
-                left: 60.0,
+                top: 250.0,
+                left: 80.0,
                 child: Text(
                   "GLDN DRGN",
-                  style: kHeading1,
+                  style: kHeading3,
                 ),
               ),
             ],
