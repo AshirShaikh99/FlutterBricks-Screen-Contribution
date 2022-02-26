@@ -43,7 +43,6 @@ Widget animatedCarousel(int index, PageController pageController) {
       if (pageController.position.haveDimensions) {
         value = index.toDouble() - (pageController.page ?? 0);
         value = (value * 0.038).clamp(-1, 1);
-        print("value $value index $index");
       }
       return Transform.rotate(
         angle: 3.14 * value,
