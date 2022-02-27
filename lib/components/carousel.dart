@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import '../components/details_block.dart';
 import 'animated_details_block.dart';
 
 class Carousel extends StatefulWidget {
@@ -11,7 +10,8 @@ class Carousel extends StatefulWidget {
 
 class _CarouselState extends State<Carousel> {
   late PageController _pageController;
-  int _currentPage = 0;
+
+  final int _currentPage = 0;
 
   @override
   void initState() {

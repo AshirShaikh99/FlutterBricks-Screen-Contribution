@@ -1,4 +1,3 @@
-import 'package:brickscontribution/components/appbar_block1.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavBarCurvedFb1 extends StatefulWidget {
@@ -33,10 +32,8 @@ class _BottomNavBarCurvedFb1State extends State<BottomNavBarCurvedFb1> {
     Size size = MediaQuery.of(context).size;
     double height = 56;
 
-    final primaryColor = Color(0xff474a5a);
-    final secondaryColor = Colors.black54;
-    final accentColor = Color(0xffffffff);
-    final backgroundColor = Color(0xff3D404E);
+    const primaryColor = Color(0xff474a5a);
+    const backgroundColor = Color(0xff3D404E);
 
     return BottomAppBar(
       color: Colors.transparent,
@@ -102,7 +99,7 @@ class BottomNavCurvePainter extends CustomPainter {
         insetCurveBeginnningX, 0, insetCurveBeginnningX, insetRadius / 2);
 
     path.arcToPoint(Offset(insetCurveEndX, insetRadius / 2),
-        radius: Radius.circular(10.0), clockwise: false);
+        radius: const Radius.circular(10.0), clockwise: false);
 
     path.quadraticBezierTo(
         insetCurveEndX, 0, insetCurveEndX + transitionToInsetCurveWidth, 0);

@@ -1,7 +1,4 @@
-import 'package:brickscontribution/components/appbar_block1.dart';
-import 'package:brickscontribution/components/appbar_block2.dart';
 import 'package:brickscontribution/components/carousel.dart';
-import 'package:brickscontribution/components/details_block.dart';
 import 'package:brickscontribution/components/transparent_topbar.dart';
 import 'package:flutter/material.dart';
 import '../constants.dart';
