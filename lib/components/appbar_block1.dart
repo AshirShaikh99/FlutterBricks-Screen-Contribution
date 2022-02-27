@@ -28,11 +28,10 @@ class AppBarBlock1 extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
-           GradientText(key,"5.99", 20.0),
+          GradientText(key, "5.99", 20.0),
           const Image(
             image: AssetImage("assets/icons/solana.png"),
           ),
-         
         ],
       ),
     );
