@@ -11,14 +11,10 @@ class TopBar extends StatelessWidget {
       aspectRatio: MediaQuery.of(context).size.height / 240,
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
-        children: [
+        children: const [
           Padding(
             padding: EdgeInsets.only(right: 10.0),
-            child: InkWell(
-                onTap: () {
-                  print("MediaQuery.of(context).size.height");
-                },
-                child: AppBarBlock1()),
+            child: AppBarBlock1(),
           ),
           Padding(
             padding: EdgeInsets.only(right: 6.0),

@@ -6,8 +6,7 @@ class AppBarBlock2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      alignment: Alignment.center,
-      height: 42.0,
+      height: 38.0,
       width: 37.0,
       decoration: BoxDecoration(
         gradient: const LinearGradient(
@@ -15,7 +14,8 @@ class AppBarBlock2 extends StatelessWidget {
           end: Alignment.bottomCenter,
           colors: [Color(0xff363946), Color(0xff474a5a), Color(0xff363946)],
         ),
-        borderRadius: BorderRadius.circular(30.0),
+        borderRadius: BorderRadius.circular(32.0),
+        border: Border.all(color: const Color(0xff474a5a), width: 5.0),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),

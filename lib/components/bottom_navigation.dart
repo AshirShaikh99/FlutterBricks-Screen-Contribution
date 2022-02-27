@@ -58,7 +58,7 @@ class _BottomNavBarCurvedFb1State extends State<BottomNavBarCurvedFb1> {
                   end: Alignment.bottomCenter,
                   colors: [Color(0xff3D404E), Color(0xff3D404E)],
                 ),
-                borderRadius: BorderRadius.circular(30.0),
+                borderRadius: BorderRadius.circular(32.0),
                 boxShadow: [
                   BoxShadow(
                     color: Colors.black.withOpacity(0.1),
