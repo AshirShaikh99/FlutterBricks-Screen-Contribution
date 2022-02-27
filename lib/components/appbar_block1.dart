@@ -7,15 +7,11 @@ class AppBarBlock1 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 50.0,
       width: 110.0,
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-          colors: [Color(0xff474a5a), Color(0xff363946)],
-        ),
-        borderRadius: BorderRadius.circular(30.0),
+        color: const Color(0xff474a5a),
+        border: Border.all(width: 0.5),
+        borderRadius: BorderRadius.circular(32.0),
         boxShadow: [
           BoxShadow(
             color: Colors.black.withOpacity(0.1),
@@ -30,8 +26,7 @@ class AppBarBlock1 extends StatelessWidget {
         children: [
           GradientText(key, "5.99", 20.0),
           const Image(
-            image: AssetImage("assets/icons/solana.png"),
-          ),
+              image: AssetImage("assets/icons/solana.png"), height: 50.0),
         ],
       ),
     );

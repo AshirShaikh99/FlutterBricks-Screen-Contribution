@@ -50,14 +50,10 @@ class _BottomNavBarCurvedFb1State extends State<BottomNavBarCurvedFb1> {
           Center(
             heightFactor: 0.6,
             child: Container(
-              height: 58.0,
-              width: 54.0,
+              // height: 58.0,
+              // width: 54.0,
               decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [Color(0xff3D404E), Color(0xff3D404E)],
-                ),
+                border: Border.all(color: const Color(0xff474a5a), width: 1.0),
                 borderRadius: BorderRadius.circular(32.0),
                 boxShadow: [
                   BoxShadow(
