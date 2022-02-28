@@ -10,7 +10,6 @@ class AppBarBlock1 extends StatelessWidget {
       width: 110.0,
       decoration: BoxDecoration(
         color: const Color(0xff474a5a),
-        border: Border.all(width: 0.5),
         borderRadius: BorderRadius.circular(32.0),
         boxShadow: [
           BoxShadow(
